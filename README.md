@@ -1,3 +1,4 @@
+<pre>
 //Install Pakeg
 npm install bkash-simple
 
@@ -29,3 +30,4 @@ bkash.createPayment(createPayment).then((res)=>{
 bkash.executePayment("paymentid").then((res)=>{
     console.warn(res)
 })
+</pre>
