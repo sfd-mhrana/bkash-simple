@@ -1,3 +1,6 @@
+//Install Pakeg
+npm install bkash-simple
+
 import {Bkash} from 'bkash-simple'
 
 const config={
@@ -9,12 +12,13 @@ const config={
 }
 const bkash=new Bkash(config)
 
-//For Create Payment
 
+//For Create Payment
 const createPayment={
 	amount: number,
 	orderID: "string",
 	intent: "sale | authorization",
+    merchantAssociationInfo: "string"
 }
 bkash.createPayment(createPayment).then((res)=>{
     console.warn(res)
